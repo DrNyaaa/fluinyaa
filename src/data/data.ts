@@ -7,7 +7,6 @@ import pic_6 from "./pictures/pic_6.jpg";
 import pic_7 from "./pictures/pic_7.jpg";
 import pic_8 from "./pictures/pic_8.png";
 import pic_9 from "./pictures/pic_9.png";
-
 export type dataElem = {
 	label: string,
 	value: string,
@@ -38,12 +37,12 @@ export const links: linkGroup[] = [
 				value: "https://www.reddit.com/r/unixporn/",
 			},
 			{
-				label: "r/rainmeter",
-				value: "https://www.reddit.com/r/rainmeter/",
+				label: "r/fuckcars",
+				value: "https://www.reddit.com/r/fuckcars/",
 			},
 			{
-				label: "r/AnimalsBeingDerps",
-				value: "https://www.reddit.com/r/AnimalsBeingDerps/",
+				label: "r/awwnime",
+				value: "https://www.reddit.com/r/awwnime/",
 			},
 		]
 	},
@@ -162,7 +161,7 @@ export const images: dataElem[] = [
 	{ label: "pic_6", value: pic_6 },
 	{ label: "pic_7", value: pic_7 },
 	{ label: "pic_8", value: pic_8 },
-	{ label: "pic_9", value: pic_9 },
+        { label: "pic_9", value: pic_9 },
 ];
 
 export const searchEngines: dataElem[] = [
@@ -196,12 +195,14 @@ export type Search = {
 export const searchSettings: Search = {
 	engine: searchEngines[0].value,
 	fastForward: {
+                "f1": "https://www.formula1.com/",
 		"deepl": "https://deepl.com/",
 		"maps": "https://google.de/maps/",
 		"reddit": "https://reddit.com/",
 		"github": "https://github.com/",
 		"gitlab": "https://gitlab.com/",
 		"youtube": "https://youtube.com/",
+                "tutanota": "https://mail.tutanota.com/login",
 	}
 }
 
@@ -221,7 +222,7 @@ export type Theme = {
 
 export const themes: Theme[] = [
 	{
-		name: "DeathAndMilk",
+		name: "Death and Milk",
 		image: pic_1,
 		colors: {
 			"--bg-color": "#2E2E2E",
@@ -279,5 +280,16 @@ export const themes: Theme[] = [
 			"--accent-color": "#c5bdb5",
 			"--accent-color2": "#93a662"
 		}
-	}
+	},
+        {
+		name: "DrNyaaaa",
+		image: "pic_9",
+		colors: {
+			"--bg-color": "#292828",
+			"--default-color": "#E6E6E6",
+			"--accent-color": "#FFB4E6",
+			"--accent-color2": "#B4FFE6",
+		},
+	},
 ]
+
